@@ -1,0 +1,21 @@
+# Clojure
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+
+# Java
+/target
+/classes
+*.jar
+*.class
+
+# Intellij IDEA
+/.idea
+*.iml
+
+# ClojureScript Reagent
+/resources/public/js/compiled
+
+# Temporary
+/log

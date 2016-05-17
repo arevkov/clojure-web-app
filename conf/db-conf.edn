@@ -1,0 +1,8 @@
+{:classname         "org.postgresql.Driver"
+ :subprotocol       "postgresql"
+ :subname           "//localhost:5432/clojure_web_app"
+ :initial-pool-size 3
+ :max-pool-size     20
+ :user              "postgres"
+ :password          "postgres"
+ }

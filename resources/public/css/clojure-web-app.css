@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.tab-pane {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.tab-content {
+    min-height: 500px;
+}
+
+.btn {
+    margin: 0 2px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.dialog {
+    margin: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+}
