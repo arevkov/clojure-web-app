@@ -9,30 +9,38 @@ interface for external clients.
 
 ## Screenshots
 
-[](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-table.png)
+![table](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-table.png)
 
-[](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-edit.png)
+![edit form](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-edit.png)
 
-[](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-delete.png)
+![delete modal](https://github.com/arevkov/clojure-web-app/raw/master/doc/screen-delete.png)
 
 
 ## Dependencies
 
 | Name | Purpose |
 |------|---------|
-|[bidi]|routing|
-|[hiccup]|template engine|
-|[hugsql]|relation-to-function mapping(framework to rdbms)|
-|[c3p0]|rdbms connection pool|
-|[sente]|an abstraction over WebSockets and Ajax|
-|[bootstrap]|html/css/js framework, might want to take a look at [Foundation] as alternative|
-|[reagent]|interface between ClojureScript and [React](http://facebook.github.io/react/) - DOM manipulation and 2-way binding|
-|[reagent-modals]|modal windows|
-|[ring]|web abstraction layer|
-|[immutant-web]|embedded app container|
-|[figwheel]|lein plugin pushing ClojureScript to browser|
+|[bidi](https://github.com/juxt/bidi)|routing|
+|[hiccup](https://github.com/weavejester/hiccup)|template engine|
+|[hugsql](http://www.hugsql.org/)|relation-to-function mapping(framework to rdbms)|
+|[c3p0](https://github.com/swaldman/c3p0)|rdbms connection pool|
+|[sente](https://github.com/ptaoussanis/sente)|an abstraction over WebSockets and Ajax|
+|[bootstrap](http://getbootstrap.com/)|html/css/js framework, might want to take a look at [Foundation] as alternative|
+|[reagent](http://reagent-project.github.io/)|interface between ClojureScript and [React](http://facebook.github.io/react/) - DOM manipulation and 2-way binding|
+|[reagent-modals](https://github.com/Frozenlock/reagent-modals)|modal windows|
+|[ring](https://github.com/ring-clojure)|web abstraction layer|
+|[immutant-web](http://immutant.org/)|embedded app container|
+|[figwheel](https://github.com/bhauman/lein-figwheel)|lein plugin pushing ClojureScript to browser|
 
 ## REST API
+
+| ENTITY | PATH> | PATH> | PATH | METHOD | ACTION |
+|--------|-------|-------|------|--------|--------|
+| User | /v1/api | /user | / | :post | Create |
+| | | | /m | :get | Receive all |
+| | | | /{id} | :get | Receive by ID |
+| | | | | :put | Edit |
+| | | | | :delete | Delete |
 
 ## Build
 
