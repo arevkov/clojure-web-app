@@ -61,11 +61,6 @@ Open in browser http://localhost:8080
 
 ## FAQ
 
-* Why do I need to keep all that javascripts and stylescheets in public folder
-  instead of just having links on them in some public CDN?
-
-  Actually, you don't.
-
 * When do I need externs?
 
   In short, advanced clojurescript compilation breaks references to functions
